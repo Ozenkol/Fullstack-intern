@@ -25,9 +25,6 @@
         </div>
     </div>
     <div class="border-1 border-[#2255A7] rounded-2xl text-[#92AACB] text-2xl pl-7 flex w-fit items-center">
-        {{ isListening }}
-        {{ note }}
-        {{ message }}
         <img src="../assets/microphone-svgrepo-com.svg" class="h-[30px] m-3" alt="" @click="toggleListening()">
         <input v-model="note" @keyup.enter="sendMessage(message)"
         class="focus:outline-none mx-7 m-3" type="text" placeholder="Ask whatever you want">
